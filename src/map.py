@@ -70,7 +70,7 @@ with zipfile.ZipFile(args.input_path) as archive:
                         else:
                             pass
                         
-                    counter_county['_all'][country] += 1
+                    counter_country['_all'][country] += 1
                     counter_lang['_all'][lang] += 1
 
 # open the outputfile

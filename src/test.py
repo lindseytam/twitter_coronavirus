@@ -3,7 +3,7 @@ import zipfile
 import json
 import datetime
 
-datadir = '/data/tweets_corona/geoTwitter20-01-03.zip'
+datadir = '/data/tweets_corona'
 
 for filename in os.listdir(datadir):
     print("in data dir=", filename)

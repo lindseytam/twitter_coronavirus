@@ -77,7 +77,7 @@ with zipfile.ZipFile(args.input_path) as archive:
                    
                     if hashtag in text:
                         counter_lang[hashtag][lang] += 1
-                        counter_county[hashtag][country] += 1
+                        counter_country[hashtag][country] += 1
                        
                     counter_country['_all'][country] += 1
                     counter_lang['_all'][lang] += 1

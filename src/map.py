@@ -63,7 +63,7 @@ with zipfile.ZipFile(args.input_path) as archive:
                     lang = tweet['lang']
                     
                     
-                    print(tweet['place']['country_code'])
+#                     print(tweet['place']['country_code'])
 #                     try:
 #                         country = tweet['place']['country_code']
 #                     except TypeError:

@@ -69,7 +69,7 @@ with zipfile.ZipFile(args.input_path) as archive:
 #                     except TypeError:
 #                         country = 'unknown'
                    
-                    if type(tweet['place']['country_code']) != None:
+                    if tweet['place'] != None and tweet['place']['country_code'] != None:
                         
                         country = tweet['place']['country_code']
                     else:

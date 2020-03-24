@@ -17,7 +17,7 @@ for path in /data/tweets_corona/*; do
    
     # run the map.py program on the input $path,
     # and save all output into log/$filename
-    date
+
     nohup src/map.py "--input_path=$path" > log/$filename
-    date
+
 done

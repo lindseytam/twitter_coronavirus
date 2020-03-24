@@ -11,13 +11,13 @@ export PYTHONUNBUFFERED=True
 # this loop processes each file in /data/twitter_corona
 # and passes the file to your map.py file as input
 for path in /data/twitter_corona/*; do
-    date
     
-    date
     # extracts the filename from the path variable
     filename=$(basename "$path")
-    date
+   
     # run the map.py program on the input $path,
     # and save all output into log/$filename
+    date
     nohup src/map.py "--input_path=$path" > log/$filename
+    date
 done

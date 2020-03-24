@@ -10,6 +10,7 @@ export PYTHONUNBUFFERED=True
 # this is the main loop for your analysis
 # this loop processes each file in /data/twitter_corona
 # and passes the file to your map.py file as input
+
 for path in /data/tweets_corona/*; do
     
     # extracts the filename from the path variable
@@ -17,7 +18,6 @@ for path in /data/tweets_corona/*; do
    
     # run the map.py program on the input $path,
     # and save all output into log/$filename
-
     nohup src/map.py "--input_path=$path" > log/$filename
 
 done

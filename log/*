@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "src/map.py", line 43, in <module>
+    with zipfile.ZipFile(args.input_path) as archive:
+  File "/usr/lib/python3.6/zipfile.py", line 1113, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/data/twitter_corona/*'

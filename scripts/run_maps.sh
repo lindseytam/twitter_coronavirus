@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 # this command creates a log folder if it doesn't already exist
@@ -11,7 +10,7 @@ export PYTHONUNBUFFERED=True
 # this is the main loop for your analysis
 # this loop processes each file in /data/twitter_corona
 # and passes the file to your map.py file as input
-for path in /data/tweets_corona/*; do
+for path in /data/twitter_corona/*; do
 
     # extracts the filename from the path variable
     filename=$(basename "$path")

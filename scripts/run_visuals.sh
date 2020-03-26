@@ -28,8 +28,8 @@ for hashtag in "#코로나바이러스" "#コロナウイルス" "#冠状病毒"
 
 
     # nohup src/map.py "--input_path=$path" > log/$filename
-    nohup ./src/visualize.py --input_path=reduced.lang --key=echo "$hashtag" | head > visuals/lang/echo "$hashtag"
-    nohup ./src/visualize.py --input_path=reduced.country --key=echo "$hashtag" | head > visuals/country/echo "$hashtag"
+    nohup ./src/visualize.py --input_path=reduced.lang --key=$hashtag | head > visuals/lang/$hashtag
+    nohup ./src/visualize.py --input_path=reduced.country --key=$hashtag | head > visuals/country/$hashtag
     
 
 done

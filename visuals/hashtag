@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "./src/visualize.py", line 26, in <module>
+    items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
+KeyError: 'hashtag'

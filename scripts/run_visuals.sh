@@ -35,7 +35,7 @@ export PYTHONUNBUFFERED=True
 for hashtag in hashtags; do
 
     # extracts the filename from the path variable
-    filename=$(basename "$path")
+#     filename=$(basename "$path")
 
     # run the map.py program on the input $path,
     # and save all output into log/$filename
@@ -43,7 +43,8 @@ for hashtag in hashtags; do
 
 
     # nohup src/map.py "--input_path=$path" > log/$filename
-    nohup ./src/visualize.py --input_path=reduced.lang --key='#coronavirus' | head >”test”
-
+    nohup ./src/visualize.py --input_path=reduced.lang --key=hashtag | head > visuals/hashtag
+    nohup ./src/visualize.py --input_path=reduced.country --key=hashtag | head > visuals/hashtag
+    
 
 done

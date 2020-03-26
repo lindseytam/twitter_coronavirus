@@ -23,7 +23,7 @@ mkdir -p visuals
 #     '#nurse',
 #     '#doctor',
 #     ]
-
+date
 # by default, python uses what's called "buffered" output;
 # buffered output causes python to 
 export PYTHONUNBUFFERED=True
@@ -48,7 +48,8 @@ for hashtag in '#코로나바이러스' \ # korean
     '#sneeze' \
     '#hospital' \
     '#nurse' \
-    '#doctor'; do
+    '#doctor' 
+    do
 
     # extracts the filename from the path variable
 #     filename=$(basename "$path")

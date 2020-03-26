@@ -11,8 +11,8 @@ export PYTHONUNBUFFERED=True
 # and passes the file to your map.py file as input
 # for path in /data/tweets_corona/*; do
 declare -a StringArray=("#코로나바이러스" "#コロナウイルス" "#冠状病毒" "#covid2019" "#covid-2019" \
-                        "#covid19" "#covid-19" "#coronavirus" "#corona" "#virus" "#flu"\
-                        "#sick" "#cough" "#sneeze" "#hospital" "#nurse" "#doctor")
+                        "#covid19" "#covid-19" "#coronavirus" "#corona" "#virus" "#flu" \
+                        "#sick" "#cough" "#sneeze" "#hospital" "#nurse" "#doctor" )
 for val in ${StringArray[@]}; do
 
     # extracts the filename from the path variable

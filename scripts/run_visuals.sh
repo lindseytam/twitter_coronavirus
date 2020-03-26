@@ -39,7 +39,7 @@ for hashtag in hashtags; do
 
     # run the map.py program on the input $path,
     # and save all output into log/$filename
-
+    hashtag
 
 
     # nohup src/map.py "--input_path=$path" > log/$filename

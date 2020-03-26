@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # this command creates a log folder if it doesn't already exist
-mkdir -p visuals
+mkdir -p visuals/lang
+mkdir -p visuals/country
 # by default, python uses what's called "buffered" output;
 # buffered output causes python to 
 export PYTHONUNBUFFERED=True
@@ -23,12 +24,12 @@ for hashtag in "#코로나바이러스" "#コロナウイルス" "#冠状病毒"
 
     # run the map.py program on the input $path,
     # and save all output into log/$filename
-    hashtag
+
 
 
     # nohup src/map.py "--input_path=$path" > log/$filename
-    nohup ./src/visualize.py --input_path=reduced.lang --key=hashtag | head > visuals/hashtag
-    nohup ./src/visualize.py --input_path=reduced.country --key=hashtag | head > visuals/hashtag
+    nohup ./src/visualize.py --input_path=reduced.lang --key=echo "$hashtag" | head > visuals/lang/echo "$hashtag"
+    nohup ./src/visualize.py --input_path=reduced.country --key=echo "$hashtag" | head > visuals/country/echo "$hashtag"
     
 
 done
